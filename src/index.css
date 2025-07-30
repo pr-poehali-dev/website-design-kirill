@@ -15,13 +15,13 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 4 86% 68%; /* #FF6B6B коралловый */
+    --primary: 24 95% 53%; /* #FF6B00 яркий оранжевый */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 177 70% 41%; /* #4ECDC4 бирюзовый */
+    --secondary: 33 100% 50%; /* #FF8C00 темно-оранжевый */
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 240 86% 59%; /* #4E50DC темно-синий */
+    --accent: 39 100% 50%; /* #FFA500 золотисто-оранжевый */
     --accent-foreground: 0 0% 100%;
 
     --muted: 220 13% 91%;
@@ -32,7 +32,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 4 86% 68%;
+    --ring: 24 95% 53%;
 
     --radius: 0.75rem;
 
