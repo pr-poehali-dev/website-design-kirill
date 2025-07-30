@@ -8,7 +8,7 @@ export default function Index() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'services', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'services', 'testimonials', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -90,6 +90,7 @@ export default function Index() {
             <div className="hidden md:flex space-x-8">
               {[
                 { id: 'home', label: 'Главная' },
+                { id: 'about', label: 'Обо мне' },
                 { id: 'services', label: 'Услуги' },
                 { id: 'testimonials', label: 'Отзывы' },
                 { id: 'contact', label: 'Контакты' }
@@ -142,7 +143,63 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* About Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Photo */}
+            <div className="order-2 lg:order-1">
+              <div className="relative">
+                <img 
+                  src="/img/55059ec0-7c96-440f-b270-265cef4f9fce.jpg" 
+                  alt="Кирилл Туйдимиров" 
+                  className="w-full max-w-md mx-auto rounded-2xl shadow-2xl hover-scale transition-all duration-500"
+                />
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
+                  <Icon name="Award" size={40} className="text-white" />
+                </div>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="order-1 lg:order-2 animate-slide-up">
+              <div className="mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                  Обо мне
+                </h2>
+                <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+              </div>
+              
+              <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>
+                  Я — Кирилл Туйдимиров, эксперт в области бизнес-консалтинга с более чем <span className="font-semibold text-primary">8-летним опытом</span> помощи компаниям в достижении выдающихся результатов.
+                </p>
+                
+                <p>
+                  За время работы я помог более <span className="font-semibold text-secondary">200+ клиентам</span> увеличить прибыль, оптимизировать процессы и масштабировать бизнес. Мой подход основан на глубоком анализе, стратегическом мышлении и практических решениях.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6 mt-8">
+                  <div className="text-center p-4 bg-gray-50 rounded-xl">
+                    <div className="text-3xl font-bold text-primary mb-2">200+</div>
+                    <div className="text-sm text-gray-600">Успешных проектов</div>
+                  </div>
+                  <div className="text-center p-4 bg-gray-50 rounded-xl">
+                    <div className="text-3xl font-bold text-secondary mb-2">8</div>
+                    <div className="text-sm text-gray-600">Лет опыта</div>
+                  </div>
+                </div>
+                
+                <p>
+                  <span className="font-semibold text-gray-900">Моя миссия</span> — помочь каждому клиенту раскрыть потенциал своего бизнеса и достичь амбициозных целей через индивидуальный подход и проверенные методики.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-slide-up">
